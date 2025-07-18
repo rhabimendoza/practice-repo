@@ -9,7 +9,6 @@ body:
     id: priority
     attributes:
       label: Priority
-      description: Select the priority level of this task.
       options:
         - High
         - Medium
@@ -21,7 +20,6 @@ body:
     id: estimated-time
     attributes:
       label: Estimated Time
-      description: Estimated time to complete this task (e.g. 2h, 1d).
       placeholder: e.g. 4h, 2d
     validations:
       required: false
@@ -30,7 +28,6 @@ body:
     id: week
     attributes:
       label: Week
-      description: Which weekly sprint this task belongs to (e.g. Week 1).
       placeholder: e.g. Week 1
     validations:
       required: false
@@ -39,7 +36,6 @@ body:
     id: category
     attributes:
       label: Category
-      description: Choose the area this task belongs to.
       options:
         - Setup
         - Auth
@@ -56,7 +52,6 @@ body:
     id: description
     attributes:
       label: Description
-      description: Clear description of what needs to be implemented.
       placeholder: Clear description of what needs to be implemented.
     validations:
       required: true
@@ -75,8 +70,6 @@ body:
     id: implementation-notes
     attributes:
       label: Implementation Notes
-      description: Useful resources or documentation links.
-      placeholder: Useful resources or documentation links
     validations:
       required: false
 
@@ -84,7 +77,6 @@ body:
     id: definition-of-done
     attributes:
       label: Definition of Done
-      description: Checklist for completing the task.
       options:
         - label: Code written and working locally
         - label: Self-reviewed for quality and best practices
