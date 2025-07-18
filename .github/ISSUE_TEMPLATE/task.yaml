@@ -21,14 +21,14 @@ body:
     attributes:
       label: Estimated Time
     validations:
-      required: false
+      required: true
 
   - type: input
     id: week
     attributes:
       label: Week
     validations:
-      required: false
+      required: true
 
   - type: dropdown
     id: category
@@ -53,21 +53,19 @@ body:
     validations:
       required: true
 
-  - type: checkboxes
+  - type: textarea
     id: acceptance-criteria
     attributes:
       label: Acceptance Criteria
-      options:
-        - label: Specific, measurable criteria
-        - label: That define when the task is complete
-        - label: Include testing requirements
+    validations:
+      required: true
 
   - type: textarea
     id: implementation-notes
     attributes:
       label: Implementation Notes
     validations:
-      required: false
+      required: true
 
   - type: checkboxes
     id: definition-of-done
@@ -80,3 +78,5 @@ body:
         - label: Documentation updated
         - label: Feature deployed and tested
         - label: Ready for optional peer review
+    validations:
+      required: true
