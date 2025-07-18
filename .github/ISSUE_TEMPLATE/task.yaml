@@ -20,7 +20,6 @@ body:
     id: estimated-time
     attributes:
       label: Estimated Time
-      placeholder: e.g. 4h, 2d
     validations:
       required: false
 
@@ -28,7 +27,6 @@ body:
     id: week
     attributes:
       label: Week
-      placeholder: e.g. Week 1
     validations:
       required: false
 
@@ -52,7 +50,6 @@ body:
     id: description
     attributes:
       label: Description
-      placeholder: Clear description of what needs to be implemented.
     validations:
       required: true
 
@@ -60,7 +57,6 @@ body:
     id: acceptance-criteria
     attributes:
       label: Acceptance Criteria
-      description: Define when this task is complete.
       options:
         - label: Specific, measurable criteria
         - label: That define when the task is complete
