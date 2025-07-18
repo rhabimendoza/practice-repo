@@ -1,0 +1,94 @@
+name: "Task: [Phase] - [Feature Name]"
+description: Template for weekly development tasks with clear criteria and definitions.
+title: "Task: [Phase] - [Feature Name]"
+labels: []
+assignees: []
+
+body:
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Select the priority level of this task.
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: input
+    id: estimated-time
+    attributes:
+      label: Estimated Time
+      description: Estimated time to complete this task (e.g. 2h, 1d).
+      placeholder: e.g. 4h, 2d
+    validations:
+      required: false
+
+  - type: input
+    id: week
+    attributes:
+      label: Week
+      description: Which weekly sprint this task belongs to (e.g. Week 1).
+      placeholder: e.g. Week 1
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Choose the area this task belongs to.
+      options:
+        - Setup
+        - Auth
+        - Database
+        - Frontend
+        - Backend
+        - Testing
+        - Deployment
+        - Documentation
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clear description of what needs to be implemented.
+      placeholder: Clear description of what needs to be implemented.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define when this task is complete.
+      options:
+        - label: Specific, measurable criteria
+        - label: That define when the task is complete
+        - label: Include testing requirements
+
+  - type: textarea
+    id: implementation-notes
+    attributes:
+      label: Implementation Notes
+      description: Useful resources or documentation links.
+      placeholder: Useful resources or documentation links
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      description: Checklist for completing the task.
+      options:
+        - label: Code written and working locally
+        - label: Self-reviewed for quality and best practices
+        - label: Tests written (if applicable)
+        - label: Documentation updated
+        - label: Feature deployed and tested
+        - label: Ready for optional peer review
