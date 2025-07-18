@@ -1,6 +1,6 @@
 name: "Task Template"
 description: Template for weekly development tasks with clear criteria and definitions.
-title: "⚠️ Replace with: Task: [Phase] - [Feature Name]"
+title: "⚠️ Task: [Phase] - [Feature Name]"
 labels: []
 assignees: []
 
